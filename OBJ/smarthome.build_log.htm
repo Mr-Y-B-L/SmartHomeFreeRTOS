@@ -1,0 +1,143 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: A A, A, LIC=CRMW3-AD2JU-SG17K-ZGJEL-QA6N8-HRDF2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.35.0.2
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+E:\code\SmartHomeFreeRTOS\USER\smarthome.uvprojx
+Project File Date:  10/08/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'smarthome'
+compiling timer4.c...
+compiling control.c...
+compiling main.c...
+..\HARDWARE\inc\oled.h(65): warning:  #1295-D: Deprecated declaration Picture - give arg types
+  void Picture();
+..\HARDWARE\inc\oled.h(66): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\inc\oled.h(67): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\inc\oled.h(72): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  void IIC_Wait_Ack();
+main.c(274): warning:  #177-D: variable "dataPtr"  was declared but never referenced
+  	unsigned char *dataPtr = NULL;
+main.c(322): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		OLED_ShowString(54,0,buf,16);//ÎÂ¶È
+main.c(324): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		OLED_ShowString(54,3,buf,16);//Êª¶È
+main.c(364): warning:  #550-D: variable "event"  was set but never used
+  	EventBits_t event;
+main.c(388): warning:  #550-D: variable "event"  was set but never used
+  	EventBits_t event;
+main.c: 9 warnings, 0 errors
+compiling beep.c...
+compiling timer3.c...
+compiling key.c...
+compiling oled.c...
+..\HARDWARE\inc\oled.h(65): warning:  #1295-D: Deprecated declaration Picture - give arg types
+  void Picture();
+..\HARDWARE\inc\oled.h(66): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\inc\oled.h(67): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\inc\oled.h(72): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  void IIC_Wait_Ack();
+..\HARDWARE\src\oled.c: 4 warnings, 0 errors
+compiling mqtt.c...
+compiling mq2.c...
+compiling delay.c...
+compiling led.c...
+compiling dht11_u8.c...
+..\HARDWARE\src\dht11_u8.c(18): warning:  #188-D: enumerated type mixed with another type
+  	DHT11_DQ_OUT(0); 	//À­µÍDQ
+..\HARDWARE\src\dht11_u8.c(20): warning:  #188-D: enumerated type mixed with another type
+  	DHT11_DQ_OUT(1); 	//DQ=1 
+..\HARDWARE\src\dht11_u8.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling fan.c...
+compiling fan_pwm.c...
+assembling startup_stm32f10x_md.s...
+compiling system_stm32f10x.c...
+compiling misc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_adc.c...
+compiling croutine.c...
+compiling core_cm3.c...
+compiling event_groups.c...
+compiling list.c...
+compiling queue.c...
+compiling tasks.c...
+compiling base64.c...
+compiling hmac_sha1.c...
+compiling sys.c...
+compiling timers.c...
+compiling heap_4.c...
+compiling MqttKit.c...
+compiling onenet.c...
+compiling cJSON.c...
+..\NET\CJSON\cJSON.c(55): warning:  #1293-D: assignment in condition
+        if (!(copy = (char*)cJSON_malloc(len))) return 0;
+..\NET\CJSON\cJSON.c(278): warning:  #1293-D: assignment in condition
+  	ptr=str;while ((token=*ptr) && ++len) {if (strchr("\"\\\b\f\n\r\t",token)) len++; else if (token<32) len+=5;ptr++;}
+..\NET\CJSON\cJSON.c(352): warning:  #111-D: statement is unreachable
+  	return p.buffer;
+..\NET\CJSON\cJSON.c(423): warning:  #1293-D: assignment in condition
+  		if (!(new_item=cJSON_New_Item())) return 0; 	/* memory fail */
+..\NET\CJSON\cJSON.c(535): warning:  #1293-D: assignment in condition
+  		if (!(new_item=cJSON_New_Item()))	return 0; /* memory fail */
+..\NET\CJSON\cJSON.c: 5 warnings, 0 errors
+compiling usart.c...
+compiling esp8266.c...
+..\HARDWARE\inc\oled.h(65): warning:  #1295-D: Deprecated declaration Picture - give arg types
+  void Picture();
+..\HARDWARE\inc\oled.h(66): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\inc\oled.h(67): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\inc\oled.h(72): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  void IIC_Wait_Ack();
+..\NET\device\src\esp8266.c: 4 warnings, 0 errors
+compiling port.c...
+linking...
+Program Size: Code=36920 RO-data=3124 RW-data=924 ZI-data=13196  
+FromELF: creating hex file...
+"..\OBJ\smarthome.axf" - 0 Error(s), 24 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  E:\Keil_v5\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
