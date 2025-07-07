@@ -10,7 +10,7 @@
 
 ##### 本项目链接：
 
-1. github（源码）：https://github.com/Mbwide/MQTT_ONENET_ESP8266_STM32_FREERTOS
+1. github（源码）：https://github.com/Mr-Y-B-L/SmartHomeFreeRTOS.git
 
 ##### 本项目借鉴项目：
 
